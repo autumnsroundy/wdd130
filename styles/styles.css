@@ -1,0 +1,83 @@
+/*Resetting defualt margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*General styles*/
+p {
+    color: #333;
+}
+/*Header, grid, and footer*/
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+/*Navigation*/
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /*shorthand for white*/
+}
+/*Main content grid*/
+.grid {
+    display: grid;
+    align-items: center;
+}
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+main img {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+aside img {
+    width: 200px;
+    height: auto;
+}
+/*Box styling*/
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+/*Additional styles*/
+aside h2 {
+    position: absolute;
+    top: 24px;
+    left: 72px;
+}
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/*note the aside selector needed to apply the grid-row where as the main did not
+This is due to natural order in HTML structure*/

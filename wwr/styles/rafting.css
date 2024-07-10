@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #3D405B;
+    --secondary-color: #E07A5F;
+    --accent1-color: #F2CC8F; 
+    --accent2-color: #81B29A;
+
+    --heading-font: 'Roboto Condensed', serif;
+    --paragraph-font: 'Sans', serif;
+
+    --nav-background-color: #F2CC8F;
+    --nav-link-color: #81B29A;
+    --nav-hover-link-color: #3D405B;
+    --nav-hover-background-color: #E07A5F;
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width:960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+p {
+    padding: 25px;
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+article {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+article img {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.sociallinks a img {
+    width: 40px; /*adjusts the width as needed*/
+    height: auto; /*keeping this as auto ensures it remains proportial to specified width*/
+}

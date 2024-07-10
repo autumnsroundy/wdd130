@@ -1,0 +1,34 @@
+.flexbox-containter {
+    display: flex;
+    /*justify-content: flex-start; all elements will align at start of main axis
+    align-items: center; stretch :all items will stretch to fill most amount of space vertically
+    align-content: center; /*
+}
+
+/*you are able to align everything within container, instead of manually adjusting them, the boxes 
+change with one another proportionally with flexbox containter*/
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+/*flex-shrink : keeps the containter from shrinking 0
+flex-grow : size enlargement for set containters*/
+
+.flexbox-item-1 {
+    min-height: 100px;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+}
+
+/* align-self: overrides the align-content and cross/main axis
+order: 1 2 3 4 (sets the order of items visually without changing html) messes up flow for screen reader!*/
