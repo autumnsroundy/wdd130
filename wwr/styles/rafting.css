@@ -20,6 +20,33 @@ body {
     font-family: var(--paragraph-font);
     max-width:960px;
     padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between figures */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+figure {
+    margin: 10px; /* Space between figures */
+    text-align: center; /* Center the caption */
+    flex: 1 1 20%; /* Grow and shrink with a base width of 20% */
+    max-width: 20%; /* Maximum width to keep items horizontal */
+}
+
+figure img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+figcaption {
+    margin-top: 5px; /* Space between image and caption */
+    font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
