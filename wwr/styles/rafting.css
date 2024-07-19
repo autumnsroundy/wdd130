@@ -11,18 +11,16 @@
     --heading-font: 'Roboto Condensed', serif;
     --paragraph-font: 'Sans', serif;
 
-    --nav-background-color: #F2CC8F;
+    --nav-background-color: #f48e72d2;
     --nav-link-color: #81B29A;
     --nav-hover-link-color: #3D405B;
-    --nav-hover-background-color: #E07A5F;
+    --nav-hover-background-color:#F2CC8F;
 }
 body {
     font-family: var(--paragraph-font);
     max-width:960px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+    font-family: Arial;
+    margin: 0 auto;
 }
 
 .adventures {
@@ -53,52 +51,66 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 header {
-    padding: 20px;
-    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-gap: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
 }
 p {
     padding: 25px;
 }
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
     display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    background-color: var(--nav-background-color);
 }
 nav a {
     display: block;
-    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
     text-decoration: none;
     padding: 1rem;
 }
 nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+    color: var(--nav-hover-link-color);
 }
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+.hero h1 {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #134f8c;
+    padding: 2rem;
+}
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
-h1 {
+.hero article {
     position: absolute;
-    top: 20px;
-    left: 20px;
-}
-article {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 400px;
-    padding: 20px;
+    top: 6rem;
     background-color: rgba(255, 255, 255, 0.9);
+    color: #3D405B;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    max-width: 80%;
+    margin: 0 auto;
 }
-article img {
+.hero article img {
     float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    width: 200px;
 }
 .sociallinks a img {
     width: 40px; /*adjusts the width as needed*/
