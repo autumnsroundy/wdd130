@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name = "viewport" content="width=device-width,initial-scale=1.0">
-        <title>Autumn Sage Roundy | About Us Page</title>
-        <meta name ="description" content="Autumn Roundy's BYU-Idaho WDD 130 course About Us page">
+        <title>Autumn Sage Roundy | Contact Us Page</title>
+        <meta name ="description" content="Contact information regarding rafting site and company details">
         <meta name="author" content="Autumn Roundy">
-        <link href="rafting.css" rel="stylesheet">
+        <link href="styles/rafting.css" rel="stylesheet">
     </head>
     <body>
 <header>
@@ -19,7 +19,60 @@
     </nav>
 </header>
 <main>
-
+    <section id="company-info">
+        <h2>Company Information</h2>
+        <p><strong>Address:</strong> 123 River Road, Adventure, RA</p>
+        <p><strong>Phone:</strong> +1 (235) 123-4567</p>
+        <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+    </section>
+    <section id="employee-profiles">
+        <h2>Meet Our Team</h2>
+        <div class="employee">
+            <img src="" alt="Employee 1">
+            <p><strong>Employee 1</strong><br> Rafting Guide</p>
+        </div>
+        <div class="employee">
+            <img src="" alt="Employee 2">
+            <p><strong>Employee 2</strong><br> Customer Support Specialist</p>
+        </div>
+        <div class="employee">
+            <img src="" alt="Employee 3">
+            <p><strong>Employee 3</strong><br> Operations Manager</p>
+        </div>
+    </section>
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_contact_form.php" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label>Purpose of Message:</label><br>
+                <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required>
+                <label for="purpose-general">General Inquiry</label><br>
+                <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question">
+                <label for="purpose-reservation">Reservation Question</label><br>
+                <input type="radio" id="purpose-suggestion" name="purpose" value="Website Suggestion">
+                <label for="purpose-suggestion">Website Suggestion</label>
+            </div>
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
 </main>
 <footer>
     <p>©️2024 | White Water Rafting Excursions | Autumn Roundy</p>
