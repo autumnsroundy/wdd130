@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the entire page */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "company-info"
+        "content"
+        "footer";
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+}
+
+/* Header section */
+header {
+    grid-area: header;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Company Information section */
+#company-info {
+    grid-area: company-info;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Employee Profiles and Google Map section */
+#employee-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+#employee-profiles .employee {
+    text-align: center;
+}
+#employee-profiles .employee img {
+    width: 150px;
+    height: auto;
+}
+
+#contact-form {
+    grid-area: content;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Footer section */
+footer {
+    grid-area: footer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #employee-profiles {
+        grid-template-columns: 1fr;
+    }
+}
