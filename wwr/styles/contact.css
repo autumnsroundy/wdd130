@@ -89,10 +89,6 @@ nav a:hover {
     padding: 20px;
 }
 /* Employee Profiles and Google Map section */
-.map iframe {
-    display: block;
-}
-
 .employee {
     display: flex;
     justify-content: space-between; /* Adjusts spacing between figures */

@@ -20,7 +20,7 @@ body {
     font-family: Arial;
     margin: 0 auto;
 }
-
+/*for about us page*/
 .adventures {
     display: flex;
     justify-content: space-between; /* Adjusts spacing between figures */
@@ -49,8 +49,24 @@ body {
     font-weight: bold;
     color: #555;
 }
-
+/*--------------------------------*/
 /*for contact page*/
+.company-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Optional: Add padding for spacing */
+}
+
+.map {
+    flex: 1; /* Take up remaining space */
+    margin-left: 20px; /* Optional: Add margin for spacing */
+}
+
+.map iframe {
+    width: 50; /* Ensure iframe fills its container */
+    height: 300px; /* Adjust height as needed */
+}
 .employee {
     display: flex; /* Use flexbox */
     justify-content: center; /* Center align items horizontally */
