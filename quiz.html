@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML and CSS Quiz</title>
+        <link href="quiz.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>HTML and CSS Quiz</h1>
+        <form action="submit_quiz.php" method"post">
+
+            <!--Question 1: Text type input (fill in the blank)-->
+            <label for="q1">1. What does CSS stand for?</label><br>
+            <input type="text" id="q1" name="q1" required><br><br>
+            
+            <!--Question 2: Textarea (short answer)-->
+            <label for="q2">2. Describe the purpose of the <code>&lt;div&gt;</code>element.</label><br>
+            <textarea id="q2" name="q2" rows="4" cols="50" required></textarea><br><br>
+
+            <!--Question 3: Select an Element (dropdown)-->
+            <label for="q3">3. What is the correct HTML tag for inserting a line break?</label><br>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="br">br</option>
+                <option value="break">break</option>
+                <option value="lb">lb</option>
+            </select><br><br>
+
+            <!--Submit button-->
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </body>
+</html>
