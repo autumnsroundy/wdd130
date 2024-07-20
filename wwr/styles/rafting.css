@@ -24,39 +24,74 @@ body {
 .adventures {
     display: flex;
     justify-content: space-between; /* Adjusts spacing between figures */
+    align-items: center;
+    padding: 20px;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    background-color: #f9f9f9;
 }
 
-figure {
+.adventures figure {
     margin: 10px; /* Space between figures */
     text-align: center; /* Center the caption */
-    flex: 1 1 20%; /* Grow and shrink with a base width of 20% */
-    max-width: 20%; /* Maximum width to keep items horizontal */
+    flex: 0 0 18%; /* Grow and shrink with a base width of 20% */
 }
 
-figure img {
+.adventures img {
     width: 100%; /* Makes the image responsive */
     height: auto; /* Maintains aspect ratio */
     border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1);
 }
 
-figcaption {
+.adventures figcaption {
     margin-top: 5px; /* Space between image and caption */
+    font-size: 0.9rem;
     font-weight: bold;
+    color: #555;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-header {
+.header {
     display: grid;
-    grid-template-columns: 100px auto;
-    grid-gap: 2rem;
-    padding: 2rem;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
     background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-header img {
-    width: 132px;
+.header img {
+    max-height: 80px;
+    width: 80px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333
+}
+.header nav {
+    justify-self: end;
+}
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.header nav ul li {
+    margin-left: 20px;
+}
+.header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+.header nav ul li a:hover {
+    color: #007bff;
 }
 p {
     padding: 25px;
@@ -113,6 +148,9 @@ nav a:hover {
 .hero article img {
     float: right;
     width: 200px;
+}
+.hero p {
+    font-size: large;
 }
 .sociallinks a img {
     width: 40px; /*adjusts the width as needed*/
