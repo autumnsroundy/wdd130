@@ -49,6 +49,29 @@ body {
     font-weight: bold;
     color: #555;
 }
+
+/*for contact page*/
+.employee {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+.employee figure {
+    text-align: center; /* Center-align the figure content */
+    margin: 0 10px; /* Optional: Adds some space between figures */
+}
+.employee img {
+    width: 150px; /* Adjust the width as per your design */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the images are block elements */
+    margin-bottom: 10px; /* Optional: Adds some space between images */
+}
+.employee figcaption {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+/*----------------------*/
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
