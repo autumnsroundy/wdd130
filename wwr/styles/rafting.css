@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*fix font family before submission week 03*/
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 :root {
     --primary-color:  #3D405B;
     --secondary-color: #f48e72d2;
@@ -21,6 +26,12 @@ body {
     margin: 0 auto;
 }
 /*for about us page*/
+.history {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 18%;
+    text-align: center;
+}
 .adventures {
     display: flex;
     justify-content: space-between; /* Adjusts spacing between figures */
@@ -33,7 +44,7 @@ body {
 .adventures figure {
     margin: 10px; /* Space between figures */
     text-align: center; /* Center the caption */
-    flex: 0 0 18%; /* Grow and shrink with a base width of 20% */
+    flex: 0 0 18%; /* Grow and shrink with a base width of 18% */
 }
 
 .adventures img {
