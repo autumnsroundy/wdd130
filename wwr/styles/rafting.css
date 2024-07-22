@@ -20,89 +20,6 @@
     --nav-hover-link-color: #3D405B;
     --nav-hover-background-color:#F2CC8F;
 }
-body {
-    font-family: var(--paragraph-font);
-    max-width:960px;
-    font-family: Arial;
-    margin: 0 auto;
-}
-/*for about us page*/
-.history {
-    display: flex;
-    justify-content: center;
-    flex: 0 0 18%;
-    text-align: center;
-}
-.adventures {
-    display: flex;
-    justify-content: space-between; /* Adjusts spacing between figures */
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    background-color: #f9f9f9;
-}
-
-.adventures figure {
-    margin: 10px; /* Space between figures */
-    text-align: center; /* Center the caption */
-    flex: 0 0 18%; /* Grow and shrink with a base width of 18% */
-}
-
-.adventures img {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 5px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1);
-}
-
-.adventures figcaption {
-    margin-top: 5px; /* Space between image and caption */
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #555;
-}
-/*--------------------------------*/
-/*for contact page*/
-#contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: flex-start;
-}
-.company-info {
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-    max-width: 300px; /* Maximum width of company info section */
-}
-.map {
-    flex: 1 1 300px; /* Take up remaining space */
-    max-width: 300px;
-    margin-left: 20px; /* Optional: Add margin for spacing */
-}
-
-.map iframe {
-    margin-top: 20px;
-    height: 300px; /* Adjust height as needed */
-}
-.employee {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center align items horizontally */
-    gap: 20px;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-}
-.employee figcaption {
-    text-align: center; /* Center-align the figure content */
-    margin-bottom: 20px; /* Optional: Adds some space between figures */
-    font-size: 14px; /* Adjust font size as needed */
-    color: #000000; /* Adjust color as needed */
-}
-.employee img {
-    width: 150px; /* Adjust the width as per your design */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures the images are block elements */
-    margin-bottom: 10px; /* Optional: Adds some space between images */
-}
-/*----------------------*/
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -209,4 +126,153 @@ nav a:hover {
 .sociallinks a img {
     width: 40px; /*adjusts the width as needed*/
     height: auto; /*keeping this as auto ensures it remains proportial to specified width*/
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width:960px;
+    font-family: Arial;
+    margin: 0 auto;
+}
+
+/*for about us page*/
+.history {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 18%;
+    text-align: center;
+}
+.adventures {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between figures */
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    background-color: #f9f9f9;
+}
+
+.adventures figure {
+    margin: 10px; /* Space between figures */
+    text-align: center; /* Center the caption */
+    flex: 0 0 18%; /* Grow and shrink with a base width of 18% */
+}
+
+.adventures img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1);
+}
+
+.adventures figcaption {
+    margin-top: 5px; /* Space between image and caption */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+/*--------------------------------*/
+
+/*for contact page*/
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+.company-info {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 300px; /* Maximum width of company info section */
+}
+.map {
+    flex: 1 1 300px; /* Take up remaining space */
+    max-width: 300px;
+    margin-left: 20px; /* Optional: Add margin for spacing */
+}
+
+.map iframe {
+    margin-top: 20px;
+    height: 300px; /* Adjust height as needed */
+}
+.employee {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align items horizontally */
+    gap: 20px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+.employee figcaption {
+    text-align: center; /* Center-align the figure content */
+    margin-bottom: 20px; /* Optional: Adds some space between figures */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #000000; /* Adjust color as needed */
+}
+.employee img {
+    width: 150px; /* Adjust the width as per your design */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the images are block elements */
+    margin-bottom: 10px; /* Optional: Adds some space between images */
+}
+/*--------------------------------*/
+
+/*for trips page*/
+.title {
+    position: relative;
+    text-align: center;
+    top: 5px;
+    background-color: #ffffff(255, 255, 255, 0.9);
+    color: #3D405B;
+    padding: 0rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.herotwo {
+    position: relative;
+}
+.herotwo img {
+    width: 100%;
+    height: auto;
+}
+.reservations {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.main-button {
+    background-color:   #f48e72d2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    width: 50%;
+    max-width: 200px;
+    text-align:center;
+}
+
+.main-button:hover {
+    background-color: #9c4831d2;
+}
+.excursions {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+.excursions h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-left: 0;
+}
+.excursions figcaption {
+    text-align: center; /* Center-align the figure content */
+    margin-bottom: 20px; /* Optional: Adds some space between figures */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #000000; /* Adjust color as needed */
+    justify-content: center; /* Center align items horizontally */
+    gap: 20px;
+}
+.excursions img {
+    width: 150px; /* Adjust the width as per your design */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the images are block elements */
+    margin-bottom: 10px; /* Optional: Adds some space between images */
+    justify-content: center; /* Center align items horizontally */
+    gap: 20px;
 }
