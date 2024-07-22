@@ -198,6 +198,9 @@ body {
     gap: 20px;
     flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 }
+.employee h2 {
+    margin-top: 110px;
+}
 .employee figcaption {
     text-align: center; /* Center-align the figure content */
     margin-bottom: 20px; /* Optional: Adds some space between figures */
