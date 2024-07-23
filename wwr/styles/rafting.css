@@ -354,10 +354,10 @@ body {
     gap: 20px;
 }
 .excursions img {
-    width: 150px; /* Adjust the width as per your design */
+    width: 220px; /* Adjust the width as per your design */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensures the images are block elements */
     margin-bottom: 10px; /* Optional: Adds some space between images */
-    justify-content: center; /* Center align items horizontally */
-    gap: 20px;
+    justify-content:space-between; /* Center align items horizontally */
+    gap: 10px;
 }
