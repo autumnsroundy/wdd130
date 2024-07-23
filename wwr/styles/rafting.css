@@ -281,15 +281,10 @@ body {
 /*--------------------------------*/
 
 /*for trips page*/
-.title {
-    position: relative;
+.book-trip h1 {
+    justify-content: center;
     text-align: center;
-    top: 5px;
-    background-color: #ffffff(255, 255, 255, 0.9);
     color: #3D405B;
-    padding: 0rem;
-    max-width: 80%;
-    margin: 0 auto;
 }
 .herotwo {
     position: relative;
