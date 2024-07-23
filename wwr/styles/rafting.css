@@ -202,21 +202,6 @@ body {
     justify-content:space-between; /* Center align items horizontally */
     gap: 5px;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-}
-.grid-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.grid-item figcaption {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
 /*------------------------------------*/
 
 /*for About Us page*/
@@ -341,4 +326,26 @@ body {
 }
 .main-button:hover {
     background-color: #9c4831d2;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.grid-item figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.grid-item figcaption button {
+    font-size: small;
+    background-color: #f5d7a7; 
+}
+.grid-item figcaption button:hover {
+    background-color: #ecc07a;
 }
