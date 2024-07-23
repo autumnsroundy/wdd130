@@ -214,7 +214,7 @@ body {
     height: auto;
     border-radius: 5px;
 }
-.grid-item p {
+.grid-item figcaption {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
