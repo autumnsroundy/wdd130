@@ -143,21 +143,22 @@ body {
     font-size: 40px;
     font-weight: bold;
 }
+.hero-content h3 {
+    font-size: 25px;
+}
 .hero-content img {
     width: 100%;
     max-height: 600px;
 }
 .hero-content article {
-    margin-top: 30px;
-    font-size: 24px;
-    font-size: larger;
+    margin-top: 15px;
+    font-size: 15px;
 }
 .newsletter {
     text-align: center;
     padding: 20px;
     background-color: #f2f2f2;
 }
-
 .newsletter form {
     display: flex;
     justify-content: center;
@@ -167,11 +168,11 @@ body {
 .newsletter input[type="text"],
 .newsletter input[type="email"],
 .newsletter button {
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     font-size: 1em;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .newsletter button {
@@ -196,9 +197,12 @@ body {
     margin-top: 10px;
 }
 .purpose-offerings {
-    padding: 50px 20px;
+    padding: 25px 25px;
 }
-
+.purpose-offerings h2 {
+    font-size: 30px;
+    text-align: center;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
