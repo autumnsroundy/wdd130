@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-.header {
+header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -32,37 +32,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--secondary-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.header img {
-    max-height: 80px;
-    width: 80px;
-}
-.header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #333
-}
-.header nav {
-    justify-self: end;
-}
-.header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-.header nav ul li {
-    margin-left: 20px;
-}
-.header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-.header nav ul li a:hover {
-    color: #007bff;
+header img {
+    width: 60px;
 }
 p {
     padding: 25px;
