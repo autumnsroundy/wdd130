@@ -298,17 +298,20 @@ body {
     font-size: 18px;
     margin-bottom: 25px;
 }
+.button-container {
+    justify-content: center;
+    align-items: center;
+}
 .main-button {
-    background-color:   #f48e72d2;
+    text-align: center;
+    background-color: #f48e72d2;
     color: white;
     padding: 12px 20px;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 24px;
-    width: 50%;
+    width: 100%;
     max-width: 200px;
-    text-align:center;
 }
 
 .main-button:hover {
