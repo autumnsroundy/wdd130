@@ -28,6 +28,7 @@ header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+    grid-gap: 1rem;
     padding: 10px 20px;
     background-color: var(--secondary-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -194,10 +195,19 @@ body {
 
 /*for about us page*/
 .history {
-    display: flex;
-    justify-content: center;
-    flex: 0 0 18%;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1rem;
+}
+.history h2 {
     text-align: center;
+    grid-column: 1/4;
+}
+.history img {
+    width: 400px;
+    height: auto;
 }
 .adventures {
     display: flex;
