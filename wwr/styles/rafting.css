@@ -219,7 +219,7 @@ body {
 }
 /*------------------------------------*/
 
-/*for about us page*/
+/*for About Us page*/
 .history {
     padding: 1rem;
     background-color: var(--accent1-color);
@@ -263,7 +263,7 @@ body {
 }
 /*--------------------------------*/
 
-/*for contact page*/
+/*For Contact page*/
 #contact {
     display: flex;
     flex-wrap: wrap;
@@ -307,7 +307,7 @@ body {
 }
 /*--------------------------------*/
 
-/*for trips page*/
+/*for Trips page*/
 .book-trip h1 {
     justify-content: center;
     text-align: center;
@@ -321,6 +321,7 @@ body {
     height: auto;
 }
 .reservations {
+    background-color: #e9f5f7;
     text-align: center;
     font-size: 18px;
     margin-bottom: 25px;
