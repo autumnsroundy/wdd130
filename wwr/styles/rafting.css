@@ -257,8 +257,13 @@ body {
     align-items: flex-start;
 }
 .company-info {
+    margin-top: 20px;
+    background-color: #e9f5f7;
     flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
     max-width: 300px; /* Maximum width of company info section */
+}
+.company-info h2 {
+    text-align: center;
 }
 .map {
     flex: 1 1 300px; /* Take up remaining space */
@@ -268,30 +273,49 @@ body {
 
 .map iframe {
     margin-top: 20px;
-    height: 300px; /* Adjust height as needed */
+    height: 320px; /* Adjust height as needed */
+}
+.employee-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    margin-right: 20px;
+}
+.employee-info h2 {
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
 }
 .employee {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center align items horizontally */
-    gap: 20px;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    display: flex;
+    flex: 1 1 100px;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 10px;
 }
-.employee h2 {
-    margin-top: 110px;
+.employee figure {
+    text-align: center;
+    flex: 1 1 100px;
 }
 .employee figcaption {
-    text-align: center; /* Center-align the figure content */
-    margin-bottom: 20px; /* Optional: Adds some space between figures */
-    font-size: 14px; /* Adjust font size as needed */
-    color: #000000; /* Adjust color as needed */
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #000000;
 }
 .employee img {
-    width: 150px; /* Adjust the width as per your design */
+    width: 100%;
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensures the images are block elements */
-    margin-bottom: 10px; /* Optional: Adds some space between images */
 }
+.contact-form {
+    flex: 1 1 200px;
+    margin-left: 20px;
+}
+
 /*--------------------------------*/
+
 
 /*for Trips page*/
 .book-trip h1 {
