@@ -370,18 +370,18 @@ body {
     margin-bottom: 25px;
 }
 .main-button {
-    display: flex;
+    display: block;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    margin-left: 360px;
     background-color: #f48e72d2;
     color: white;
     padding: 12px 20px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 24px;
-    width: 100%;
     max-width: 200px;
+    margin-bottom: 20px;
 }
 .main-button:hover {
     background-color: #9c4831d2;
