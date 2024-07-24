@@ -275,24 +275,15 @@ body {
     margin-top: 20px;
     height: 320px; /* Adjust height as needed */
 }
-.employee-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex: 1 1 200px;
-    margin-right: 20px;
-}
 .employee-info h2 {
     text-align: center;
     font-size: 30px;
-    width: 50%;
+    margin-bottom: 20px;
 }
 .employee {
     display: flex;
-    flex: 1 1 100px;
     flex-wrap: wrap;
-    justify-content: flex-start; 
+    justify-content: space-between; 
     gap: 10px;
 }
 .employee figure {
@@ -300,8 +291,8 @@ body {
     flex: 1 1 100px;
 }
 .employee figcaption {
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 18px;
     color: #000000;
 }
 .employee img {
@@ -310,8 +301,47 @@ body {
     display: block; /* Ensures the images are block elements */
 }
 .contact-form {
-    flex: 1 1 200px;
+    flex: 1 1 50%;
     margin-left: 20px;
+}
+.contact-form h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact-form form {
+    background-color: #e9f5f7;
+    padding: 20px;
+}
+.contact-form form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdbdbd; 
+    border-radius: 3px; 
+}
+
+.contact-form form input[type="checkbox"],
+.contact-form form input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    background-color:#F2CC8F;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contact-form form button:hover {
+    background-color: #F2CC8F;
 }
 
 /*--------------------------------*/
@@ -372,5 +402,5 @@ body {
     background-color: #f5d7a7; 
 }
 .grid-item figcaption button:hover {
-    background-color: #ecc07a;
+    background-color: #e8b360;
 }
