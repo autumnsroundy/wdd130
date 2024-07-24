@@ -61,40 +61,6 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-.hero{
-    position: relative;
-}
-.hero h1 {
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: #134f8c;
-    padding: 2rem;
-}
-.hero img {
-    width: 100%;
-    height: auto;
-}
-.hero article {
-    position: absolute;
-    top: 5rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #3D405B;
-    padding: 1rem;
-    left: 0;
-    right: 0;
-    max-width: 80%;
-    margin: 0 auto;
-}
-.hero article img {
-    float: right;
-    width: 200px;
-}
-.hero p {
-    font-size: large;
-}
 .sociallinks a img {
     width: 40px; /*adjusts the width as needed*/
     height: auto; /*keeping this as auto ensures it remains proportial to specified width*/
@@ -204,6 +170,41 @@ body {
 /*------------------------------------*/
 
 /*for About Us page*/
+.hero{
+    position: relative;
+}
+.hero h1 {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #134f8c;
+    padding: 2rem;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hero article {
+    position: absolute;
+    top: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #3D405B;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.hero article img {x
+    float: right;
+    width: 200px;
+}
+.hero p {
+    text-align: center;
+    font-size: 23px;
+}
 .history {
     padding: 1rem;
     background-color: var(--accent1-color);
@@ -212,6 +213,7 @@ body {
     gap: 1rem;
 }
 .history h2 {
+    font-size: 30px;
     text-align: center;
     grid-column: 1/4;
 }
