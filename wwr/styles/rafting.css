@@ -235,6 +235,9 @@ body {
     text-align: center;
     padding: 2rem 0;
 }
+.adventures h2 {
+    font-size: 30px;
+}
 .adventures div {
     display: flex;
     flex-flow: row;
